@@ -1,0 +1,7 @@
+<h1>Welcome to the homepage</h1>
+<% @languages.each do |language| %>
+  <div class="">
+    <h1><%= language[:title] %></h1>
+    <p><%= language[:body] %></p>
+  </div>
+<% end %>
