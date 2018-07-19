@@ -6,7 +6,7 @@ class PostsController < Sinatra::Base
   set :views, Proc.new { File.join(root, "views") }
 
   configure :development do
-    register Sinatra::Reloader
+    register Sinatra::Reloader#this lets us see changes without restarting server
   end
 
   $languages = [{
